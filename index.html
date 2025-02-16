@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="background-video">
+        <video autoplay muted loop id="myVideo">
+            <source src="media/Body-Background.mp4" type="video/mp4">
+        </video>
+    </div>
+
+    <div class="music-player">
+        <audio id="bgMusic" loop>
+            <source src="media/The Script - Superheroes (Audio) [0y7ygEDRpSo].mp3" type="audio/mp3">
+        </audio>
+        <button id="musicToggle" class="music-toggle">
+            <span class="music-icon">🎵</span>
+        </button>
+    </div>
+
+    <nav class="navbar">
+        <div class="nav-brand">
+            <h1 class="animated-name">Nejoelem C. Alquino Jr.</h1>
+        </div>
+        <div class="nav-items">
+            <a href="#" class="nav-item active" data-section="home">Home</a>
+            <a href="#" class="nav-item" data-section="about">About</a>
+            <a href="#" class="nav-item" data-section="portfolio">Portfolio</a>
+            <a href="#" class="nav-item" data-section="techstack">Tech Stack</a>
+            <a href="#" class="nav-item" data-section="contact">Contact</a>
+        </div>
+    </nav>
+
+    <div class="profile-section" id="home-section">
+        <div class="profile-content">
+            <div class="profile-circle">
+                <img src="media/P-p.jpg" alt="Profile Picture" class="profile-img">
+            </div>
+            <div class="profile-info">
+                <h2 class="profile-name">Nejoelem C. Alquino Jr.</h2>
+                <p class="profile-title">Web Developer</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="content-section" id="about-section" style="display: none;">
+        <div class="section-content">
+            <h2>About Me</h2>
+            <div class="about-content">
+                <p>I am Nejoelem Alquino Jr., an IT student at Eastern Visayas State University. Passionate about technology, I specialize in programming, networking, and system development. I enjoy solving problems, learning continuously, and contributing to meaningful projects that drive innovation.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="content-section" id="portfolio-section" style="display: none;">
+        <div class="section-content">
+            <h2>My Portfolio</h2>
+            <div class="portfolio-grid">
+                <div class="portfolio-item">
+                    <img src="Port/Project img 1.png" alt="Project 1">
+                    <div class="portfolio-overlay">
+                        <h3>Web Development</h3>
+                        <p>Web Expense Tracker without database.</p>
+                        <a href="https://github.com/nhedz123/Expense-tracker" class="portfolio-link">View Project</a>
+                    </div>
+                </div>
+                <div class="portfolio-item">
+                    <img src="Port/Project img 2.png" alt="Project 2">
+                    <div class="portfolio-overlay">
+                        <h3>Guess the Number</h3>
+                        <p>Guess the number web app.</p>
+                        <a href="https://github.com/nhedz123/Guess-the-number" class="portfolio-link">View Project</a>
+                    </div>
+                </div>
+                <div class="portfolio-item">
+                    <img src="Port/Project img 3.png" alt="Project 3">
+                    <div class="portfolio-overlay">
+                        <h3>Expense Tracker</h3>
+                        <p>Expense Tracker App. with database.</p>
+                        <a href="https://github.com/nhedz123/Expense-Tracker-App" class="portfolio-link">View Project</a>
+                    </div>
+                </div>
+                <div class="portfolio-item">
+                    <img src="Port/Project img 4.png" alt="Project 4">
+                    <div class="portfolio-overlay">
+                        <h3>Sales Tracker</h3>
+                        <p>Sales Tracker App. with database.</p>
+                        <a href="https://github.com/nhedz123/Sales-Tracker" class="portfolio-link">View Project</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="content-section" id="techstack-section" style="display: none;">
+        <div class="section-content">
+            <h2>My Tech Stack</h2>
+            <div class="tech-stack-grid">
+                <div class="tech-item">
+                    <img src="tech/html.png" alt="HTML5">
+                    <div class="tech-info">
+                        <h3>HTML5</h3>
+                        <div class="skill-bar">
+                            <div class="skill-level" style="width: 90%"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tech-item">
+                    <img src="tech/Css.png" alt="CSS3">
+                    <div class="tech-info">
+                        <h3>CSS3</h3>
+                        <div class="skill-bar">
+                            <div class="skill-level" style="width: 85%"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tech-item">
+                    <img src="tech/java-script.png" alt="JavaScript">
+                    <div class="tech-info">
+                        <h3>JavaScript</h3>
+                        <div class="skill-bar">
+                            <div class="skill-level" style="width: 80%"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tech-item">
+                    <img src="tech/python.png" alt="Python">
+                    <div class="tech-info">
+                        <h3>Python</h3>
+                        <div class="skill-bar">
+                            <div class="skill-level" style="width: 75%"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tech-item">
+                    <img src="tech/java.png" alt="Java">
+                    <div class="tech-info">
+                        <h3>Java</h3>
+                        <div class="skill-bar">
+                            <div class="skill-level" style="width: 70%"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="content-section" id="contact-section" style="display: none;">
+        <div class="section-content">
+            <h2>Contact Me</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <i class="contact-icon">📧</i>
+                        <div class="contact-details">
+                            <h3>Email</h3>
+                            <p>alquinonejoelem21@gmail.com</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="contact-icon">📱</i>
+                        <div class="contact-details">
+                            <h3>Phone</h3>
+                            <p>+63 9927844002</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="contact-icon">📍</i>
+                        <div class="contact-details">
+                            <h3>Location</h3>
+                            <p>Ormoc City, Leyte</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="social-links">
+                    <h3>Connect With Me</h3>
+                    <div class="social-icons">
+                        <a href="https://github.com/nhedz123" class="social-icon" target="_blank">
+                            <i class="social-icon-img">🌐</i>
+                            <span>GitHub</span>
+                        </a>
+                        <a href="https://www.facebook.com/profile.php?id=100028296282457" class="social-icon" target="_blank">
+                            <i class="social-icon-img">👥</i>
+                            <span>Facebook</span>
+                        </a>
+                        <a href="https://www.linkedin.com/in/nejoelem-alquino-jr-b5a5b8293/" class="social-icon" target="_blank">
+                            <i class="social-icon-img">💼</i>
+                            <span>LinkedIn</span>
+                        </a>
+                        <a href="https://www.instagram.com/nhe_mur21/" class="social-icon" target="_blank">
+                            <i class="social-icon-img">📸</i>
+                            <span>Instagram</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
